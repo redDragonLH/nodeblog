@@ -16,5 +16,9 @@
     "mongodb": "^2.2.22",
     "morgan": "~1.7.0",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "connect-flash": "^0.1.1",
+    "nodemon": "^1.11.0"
   }
 }

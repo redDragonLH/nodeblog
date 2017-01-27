@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>blog</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+<header>
+  <h1><%= title %></h1>
+</header>
+<nav>
+  <span><a title="主页" href="/">home</a></span>
+  <% if (user) { %>
+    <span><a href="/post"title="发表">post</a></span>
+    <span><a href="/logout"title="登出">logout</a></span>
+  <% } else {%>
+  <span><a title="登陆" href="/login">login</a></span>
+  <span><a title="注册" href="/reg">register</a></span>
+  <% } %>
+</nav>
+<article class="">
+<% if (success) { %>
+  <div><%= success %></div>
+<% } %>
+<% if (error) {%>
+<div><%= error %></div>
+<% } %>
