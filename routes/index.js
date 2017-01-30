@@ -3,7 +3,16 @@ var User = require('../models/user.js');
 var Post = require('../models/post.js');
 // 上传文件
 var multer = require('multer');
-var upload = multer({dest: './public/images'});
+var storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, './public/images');
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.fieldname + '-' + Date.now() + '-' + file.originalname);
+  }
+});
+
+var upload = multer({ storage: storage });
 /* GET home page.
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
@@ -149,10 +158,13 @@ module.exports = function(app){
     {name: 'file4'},
     {name: 'file5'}
 ]), function(req, res, next){
+    var text,host;
     for(var i in req.files){
+        text = req.files[i][0].destination + '/' + req.files[i][0].filename;
+        host = req.host+':3000/';
         console.log(req.files[i]);
     }
-    req.flash('success', '文件上传成功!');
+    req.flash('success', '文件上传成功!'+ '文件链接: ' + host + text);
     res.redirect('/upload');
 });
   function checkLogin(req, res, next) {
