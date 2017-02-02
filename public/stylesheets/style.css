@@ -121,3 +121,11 @@ article a:hover{
   transition: color .2s linear;
   -webkit-transition: color .2s linear;
 }
+
+.search{
+  border: 0;
+  width: 6em;
+  text-align: center;
+  font-size: 1em;
+  margin: .5em 0;
+}
