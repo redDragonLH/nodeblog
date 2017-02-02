@@ -399,9 +399,35 @@ module.exports = function(app){
     });
   });
 
+  //转载
+  app.get('/reprint/:name/:day/:title', checkLogin);
+  app.get('/reprint/:name/:day/:title', function (req, res) {
+    Post.edit(req.params.name, req.params.day, req.params.title, function (err, post) {
+      if(err) {
+        req.flash('error', err);
+        return res.redirect(back);
+      }
+      var currentUser = req.session.user,
+          reprint_from = {name: post.name, day: post.time, title: post.title},
+          reprint_to = {name: currentUser.name, head: currentUser.head};
+
+      Post.reprint(reprint_from,reprint_to, function (err, post) {
+        if(err) {
+          req.flash('error', err);
+          return res.redirect('back');
+        }
+        req.flash('success', '转载成功');
+        var url = encodeURI('/u/' + post.name + '/' + post.time.day + '/' + post.title);
+
+        // 跳转到转载后的页面
+        res.redirect(url);
+      });
+    });
+  });
+
   // 404
   app.use(function (req, res) {
-    res.render('404')
+    res.render('404');
   });
 
   function checkLogin(req, res, next) {

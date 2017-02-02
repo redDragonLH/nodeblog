@@ -10,9 +10,22 @@
   <a href="/tags/<%= tag %>"><%= tag %></a>
   <% } %>
   <% }) %>
+
+  <% if (post.reprint_info.reprint_from) { %>
+    <br><a href="/u/<%= post.reprint_info.reprint_from.name %>/<%= post.reprint_info.reprint_from.day %>/<%= post.reprint_info.reprint_from.title %>">原文链接</a>
+  <% } %>
 </p>
 <p><%- post.post %></p>
-<p class="info">阅读： <%= post.pv %> | <%= post.comments.length %></p>
+<p class="info">
+  阅读： <%= post.pv %> |
+  评论： <%= post.comments.length %> |
+  转载：
+  <% if(post.reprint_info.reprint_to) { %>
+    <%= post.reprint_info.reprint_to.length %>
+  <% } else { %>
+    <%= 0 %>
+  <% } %>
+</p>
 
 <% }) %>
 
