@@ -16,5 +16,6 @@
   <% }) %>
 </p>
 <p><%- post.post %></p>
+<p class="info">阅读： <%= post.pv %> | <%= post.comments.length %></p>
 <%- include comment %>
 <%- include footer %>

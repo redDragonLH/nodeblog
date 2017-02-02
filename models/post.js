@@ -27,7 +27,8 @@ Post.prototype.save = function(callback) {
     title : this.title,
     post : this.post,
     tags: this.tags,
-    comments: []
+    comments: [],
+    pv: 0
   };
   // 打开数据库
   mongodb.open(function (err, db) {
@@ -108,9 +109,24 @@ Post.getOne = function (name, day, title, callback) {
         "time.day": day,
         "title": title
       }, function (err, doc) {
-        mongodb.close();
         if (err) {
+          mongodb.close();
           return callback(err);
+        }
+        if (doc) {
+          // 每访问一次，PV值增加 1
+          collection.update({
+            "name": name,
+            "time.day": day,
+            "title": title
+          },{
+            $inc: {"pv": 1}
+          },function (err) {
+            mongodb.close();
+            if(err) {
+              return callback(err);
+            }
+          });
         }
         // 解析 markdown 为 html5dw
         if (doc){
