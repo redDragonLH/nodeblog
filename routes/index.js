@@ -237,7 +237,15 @@ module.exports = function(app){
       });
     });
   });
-
+  // 友链
+  app.get('/links', function (req, res) {
+    res.render('links', {
+      title: '友情链接',
+      user: req.session.user,
+      success: req.flash('success').toString(),
+      error: req.flash('error').toString()
+    });
+  });
   // 搜索
   app.get('/search', function (req, res) {
     Post.search(req.query.keyword, function (err, posts) {
@@ -254,7 +262,7 @@ module.exports = function(app){
       });
     });
   });
-  
+
   app.get('/u/:name', function (req, res) {
     var page = req.query.p ? parseInt(req.query.p) :1 ;
     User.get(req.params.name, function (err, user) {
@@ -385,6 +393,11 @@ module.exports = function(app){
       req.flash('success', '删除成功');
       res.redirect('/');
     });
+  });
+
+  // 404
+  app.use(function (req, res) {
+    res.render('404')
   });
 
   function checkLogin(req, res, next) {
