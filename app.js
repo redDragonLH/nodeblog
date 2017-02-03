@@ -20,6 +20,8 @@ var accessLog = fs.createWriteStream('access.log', {flags: 'a'});
 var errorLog = fs.createWriteStream('error.log', {flags: 'a'});
 var app = express();
 app.use(session({
+  resave: false,//重新保存：强制会话保存即使是未修改的。(默认值ture)
+  saveUninitialized: true,//强制保存未初始化的会话到存储器
   secret: settings.cookieSecret,
   key: settings.db,
   cookie: {maxAge: 1000 * 60 * 60 * 24 *30},
