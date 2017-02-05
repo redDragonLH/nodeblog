@@ -431,7 +431,7 @@ module.exports = function(app){
   });
 
   function checkLogin(req, res, next) {
-    if( !req.session.user) {
+    if( req.session.user === undefined ) {
       req.flash('error', '未登录');
       res.redirect('/login');
     }
