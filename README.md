@@ -1,8 +1,8 @@
 # 多用户登录博客系统（nodejs实战案例）  
 
-** nodemon ./bin/www 开启服务 （没有使用本书推荐的开启工具 **    
+``` nodemon ./bin/www 开启服务 （没有使用本书推荐的开启工具 ``` 
 
-** mongod --dbpath c:\mongodata\blog  & mongod --logpath "C:\mongodata\blog\mongodb.log" --install  开启mongodb数据库 **
+``` mongod --dbpath c:\mongodata\blog  & mongod --logpath "C:\mongodata\blog\mongodb.log" --install  开启mongodb数据库 ```
 
 ##使用后台nodejs与数据mongodb写的系统  
   完全是全新的东西，没有学过，先按照书中的例子进行，再自己更改
@@ -30,4 +30,4 @@
   添加 日志功能  
 
 
-#### 正式抄完了，自定义样式与内容 在上班后再找机会进行
+#### 主体正式写完，自定义样式与内容 在上班后再找机会进行
