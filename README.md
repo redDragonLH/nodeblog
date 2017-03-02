@@ -1,6 +1,6 @@
-# 多用户登录博客系统（nodejs实战案例）  
+# 多用户登录博客系统  
 
-``` nodemon ./bin/www 开启服务 （没有使用本书推荐的开启工具 ``` 
+``` nodemon ./bin/www 开启服务  ``` 
 
 ``` mongod --dbpath c:\mongodata\blog  & mongod --logpath "C:\mongodata\blog\mongodb.log" --install  开启mongodb数据库 ```
 
