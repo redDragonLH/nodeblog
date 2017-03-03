@@ -1,2 +1,0 @@
-::ffff:127.0.0.1 - - [Thu, 02 Feb 2017 15:30:53 GMT] "GET /u/2/2017-2-2/%5B%E8%BD%AC%E8%BD%BD%5Defsfs HTTP/1.1" 200 1992 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
-::ffff:127.0.0.1 - - [Thu, 02 Feb 2017 15:30:53 GMT] "GET /stylesheets/style.css HTTP/1.1" 304 - "http://2016.html5dw.cn:3000/u/2/2017-2-2/%5B%E8%BD%AC%E8%BD%BD%5Defsfs" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
