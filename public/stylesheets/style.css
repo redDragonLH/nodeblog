@@ -40,6 +40,8 @@ nav a:hover{
 article{
   font-size: 16px;
   padding-top: .5em;
+  padding-left:40px;
+  padding-right:40px;
 }
 article a{
   color: #dd0000;

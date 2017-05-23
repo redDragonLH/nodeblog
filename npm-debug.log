@@ -1,99 +1,47 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'D:\\Program Files\\nodejs\\node.exe',
 1 verbose cli   'C:\\Users\\13329\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'install',
-1 verbose cli   '-g',
-1 verbose cli   'fsevents' ]
+1 verbose cli   'start' ]
 2 info using npm@4.0.3
 3 info using node@v7.2.1
-4 silly loadCurrentTree Starting
-5 silly install loadCurrentTree
-6 silly install readGlobalPackageData
-7 silly fetchPackageMetaData fsevents
-8 silly fetchNamedPackageData fsevents
-9 silly mapToRegistry name fsevents
-10 silly mapToRegistry using default registry
-11 silly mapToRegistry registry https://registry.npmjs.org/
-12 silly mapToRegistry data Result {
-12 silly mapToRegistry   raw: 'fsevents',
-12 silly mapToRegistry   scope: null,
-12 silly mapToRegistry   escapedName: 'fsevents',
-12 silly mapToRegistry   name: 'fsevents',
-12 silly mapToRegistry   rawSpec: '',
-12 silly mapToRegistry   spec: 'latest',
-12 silly mapToRegistry   type: 'tag' }
-13 silly mapToRegistry uri https://registry.npmjs.org/fsevents
-14 verbose request uri https://registry.npmjs.org/fsevents
-15 verbose request no auth needed
-16 info attempt registry request try #1 at 14:36:06
-17 verbose request id f8c775a030dfeb00
-18 verbose etag W/"5886285d-c238"
-19 verbose lastModified Mon, 23 Jan 2017 15:59:25 GMT
-20 http request GET https://registry.npmjs.org/fsevents
-21 http 304 https://registry.npmjs.org/fsevents
-22 verbose headers { date: 'Fri, 27 Jan 2017 06:36:07 GMT',
-22 verbose headers   via: '1.1 varnish',
-22 verbose headers   'cache-control': 'max-age=300',
-22 verbose headers   etag: 'W/"5886285d-c238"',
-22 verbose headers   age: '0',
-22 verbose headers   connection: 'keep-alive',
-22 verbose headers   'x-served-by': 'cache-nrt6121-NRT',
-22 verbose headers   'x-cache': 'HIT',
-22 verbose headers   'x-cache-hits': '1',
-22 verbose headers   'x-timer': 'S1485498967.775665,VS0,VE102',
-22 verbose headers   vary: 'Accept-Encoding' }
-23 silly get cb [ 304,
-23 silly get   { date: 'Fri, 27 Jan 2017 06:36:07 GMT',
-23 silly get     via: '1.1 varnish',
-23 silly get     'cache-control': 'max-age=300',
-23 silly get     etag: 'W/"5886285d-c238"',
-23 silly get     age: '0',
-23 silly get     connection: 'keep-alive',
-23 silly get     'x-served-by': 'cache-nrt6121-NRT',
-23 silly get     'x-cache': 'HIT',
-23 silly get     'x-cache-hits': '1',
-23 silly get     'x-timer': 'S1485498967.775665,VS0,VE102',
-23 silly get     vary: 'Accept-Encoding' } ]
-24 verbose etag https://registry.npmjs.org/fsevents from cache
-25 verbose get saving fsevents to C:\Users\13329\AppData\Roaming\npm-cache\registry.npmjs.org\fsevents\.cache.json
-26 verbose correctMkdir C:\Users\13329\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-27 silly install normalizeTree
-28 silly loadCurrentTree Finishing
-29 silly loadIdealTree Starting
-30 silly install loadIdealTree
-31 silly cloneCurrentTree Starting
-32 silly install cloneCurrentTreeToIdealTree
-33 silly cloneCurrentTree Finishing
-34 silly loadShrinkwrap Starting
-35 silly install loadShrinkwrap
-36 silly loadShrinkwrap Finishing
-37 silly loadAllDepsIntoIdealTree Starting
-38 silly install loadAllDepsIntoIdealTree
-39 silly rollbackFailedOptional Starting
-40 silly rollbackFailedOptional Finishing
-41 silly runTopLevelLifecycles Finishing
-42 silly install printInstalled
-43 verbose stack Error: Unsupported platform for fsevents@1.0.17: wanted {"name":"fsevents","version":"1.0.17","description":"Native Access to Mac OS-X FSEvents","main":"fsevents.js","dependencies":{"nan":"^2.3.0","node-pre-gyp":"^0.6.29"},"os":["darwin"],"engines":{"node":">=0.8.0"},"scripts":{"install":"node-pre-gyp install --fallback-to-build","prepublish":"if [ $(npm -v | head -c 1) -lt 3 ]; then exit 1; fi && npm dedupe","test":"tap ./test"},"binary":{"module_name":"fse","module_path":"./lib/binding/{configuration}/{node_abi}-{platform}-{arch}/","remote_path":"./v{version}/","package_name":"{module_name}-v{version}-{node_abi}-{platform}-{arch}.tar.gz","host":"https://fsevents-binaries.s3-us-west-2.amazonaws.com"},"repository":{"type":"git","url":"git+https://github.com/strongloop/fsevents.git"},"keywords":["fsevents","mac"],"author":{"name":"Philipp Dunkel","email":"pip@pipobscure.com"},"license":"MIT","bugs":{"url":"https://github.com/strongloop/fsevents/issues"},"homepage":"https://github.com/strongloop/fsevents","devDependencies":{"tap":"~0.4.8"},"gitHead":"bfe53551466fc21ec4281168f229e1e9da8bc2fd","bundleDependencies":["node-pre-gyp"],"_id":"fsevents@1.0.17","_shasum":"8537f3f12272678765b4fd6528c0f1f66f8f4558","_from":"fsevents","_npmVersion":"3.10.9","_nodeVersion":"6.9.2","_npmUser":{"name":"es128","email":"elan.shanker+npm@gmail.com"},"dist":{"shasum":"8537f3f12272678765b4fd6528c0f1f66f8f4558","tarball":"https://registry.npmjs.org/fsevents/-/fsevents-1.0.17.tgz"},"maintainers":[{"name":"bajtos","email":"miro.bajtos@gmail.com"},{"name":"bnoordhuis","email":"info@bnoordhuis.nl"},{"name":"es128","email":"elan.shanker+npm@gmail.com"},{"name":"pipobscure","email":"pip@pipobscure.com"},{"name":"strongloop","email":"callback@strongloop.com"}],"_npmOperationalInternal":{"host":"packages-12-west.internal.npmjs.com","tmp":"tmp/fsevents-1.0.17.tgz_1483568750527_0.6194838422816247"},"directories":{},"_resolved":"https://registry.npmjs.org/fsevents/-/fsevents-1.0.17.tgz","_requested":{"raw":"fsevents","scope":null,"escapedName":"fsevents","name":"fsevents","rawSpec":"","spec":"latest","type":"tag"},"_spec":"fsevents","_where":"D:\\xampp\\htdocs\\blog","_args":[[{"raw":"fsevents","scope":null,"escapedName":"fsevents","name":"fsevents","rawSpec":"","spec":"latest","type":"tag"},"D:\\xampp\\htdocs\\blog"]],"readme":"ERROR: No README data found!"} (current: {"os":"win32","cpu":"x64"})
-43 verbose stack     at checkPlatform (C:\Users\13329\AppData\Roaming\npm\node_modules\npm\node_modules\npm-install-checks\index.js:45:14)
-43 verbose stack     at thenWarnEngineIssues (C:\Users\13329\AppData\Roaming\npm\node_modules\npm\lib\install\validate-args.js:41:5)
-43 verbose stack     at C:\Users\13329\AppData\Roaming\npm\node_modules\npm\node_modules\iferr\index.js:13:50
-43 verbose stack     at checkEngine (C:\Users\13329\AppData\Roaming\npm\node_modules\npm\node_modules\npm-install-checks\index.js:24:10)
-43 verbose stack     at module.exports.isInstallable (C:\Users\13329\AppData\Roaming\npm\node_modules\npm\lib\install\validate-args.js:38:3)
-43 verbose stack     at Array.<anonymous> (C:\Users\13329\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
-43 verbose stack     at LOOP (C:\Users\13329\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
-43 verbose stack     at C:\Users\13329\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\chain.js:18:7
-43 verbose stack     at checkSelf (C:\Users\13329\AppData\Roaming\npm\node_modules\npm\lib\install\validate-args.js:46:72)
-43 verbose stack     at Array.<anonymous> (C:\Users\13329\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
-44 verbose pkgid fsevents@1.0.17
-45 verbose cwd D:\xampp\htdocs\blog
-46 error Windows_NT 10.0.14393
-47 error argv "D:\\Program Files\\nodejs\\node.exe" "C:\\Users\\13329\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "fsevents"
-48 error node v7.2.1
-49 error npm  v4.0.3
-50 error code EBADPLATFORM
-51 error notsup Unsupported platform for fsevents@1.0.17: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
-52 error notsup Valid OS:    darwin
-52 error notsup Valid Arch:  any
-52 error notsup Actual OS:   win32
-52 error notsup Actual Arch: x64
-53 verbose exit [ 1, true ]
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle blog@0.0.0~prestart: blog@0.0.0
+6 silly lifecycle blog@0.0.0~prestart: no script for prestart, continuing
+7 info lifecycle blog@0.0.0~start: blog@0.0.0
+8 verbose lifecycle blog@0.0.0~start: unsafe-perm in lifecycle true
+9 verbose lifecycle blog@0.0.0~start: PATH: C:\Users\13329\AppData\Roaming\npm\node_modules\npm\bin\node-gyp-bin;D:\xampp\htdocs\blog\node_modules\.bin;C:\Users\13329\bin;D:\Program Files\Git\mingw64\bin;D:\Program Files\Git\usr\local\bin;D:\Program Files\Git\usr\bin;D:\Program Files\Git\usr\bin;D:\Program Files\Git\mingw64\bin;D:\Program Files\Git\usr\bin;C:\Users\13329\bin;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;D:\Program Files\Git\cmd;D:\Program Files\nodejs;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\MinGW\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Users\13329\AppData\Local\Programs\Python\Python36-32\Scripts;C:\Users\13329\AppData\Local\Programs\Python\Python36-32;C:\Users\13329\AppData\Local\Microsoft\WindowsApps;C:\Users\13329\AppData\Local\atom\bin;D:\xampp\php;C:\Users\13329\AppData\Roaming\npm;D:\xampp\mysql\bin;C:\Users\13329\AppData\Local\Microsoft\WindowsApps;D:\Program Files\Git\usr\bin\vendor_perl;D:\Program Files\Git\usr\bin\core_perl
+10 verbose lifecycle blog@0.0.0~start: CWD: D:\xampp\htdocs\blog
+11 silly lifecycle blog@0.0.0~start: Args: [ '/d /s /c', 'node ./bin/www' ]
+12 silly lifecycle blog@0.0.0~start: Returned: code: 1  signal: null
+13 info lifecycle blog@0.0.0~start: Failed to exec start script
+14 verbose stack Error: blog@0.0.0 start: `node ./bin/www`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (C:\Users\13329\AppData\Roaming\npm\node_modules\npm\lib\utils\lifecycle.js:279:16)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at EventEmitter.emit (events.js:191:7)
+14 verbose stack     at ChildProcess.<anonymous> (C:\Users\13329\AppData\Roaming\npm\node_modules\npm\lib\utils\spawn.js:40:14)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at ChildProcess.emit (events.js:191:7)
+14 verbose stack     at maybeClose (internal/child_process.js:885:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+15 verbose pkgid blog@0.0.0
+16 verbose cwd D:\xampp\htdocs\blog
+17 error Windows_NT 10.0.15063
+18 error argv "D:\\Program Files\\nodejs\\node.exe" "C:\\Users\\13329\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "start"
+19 error node v7.2.1
+20 error npm  v4.0.3
+21 error code ELIFECYCLE
+22 error blog@0.0.0 start: `node ./bin/www`
+22 error Exit status 1
+23 error Failed at the blog@0.0.0 start script 'node ./bin/www'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the blog package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     node ./bin/www
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs blog
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls blog
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
