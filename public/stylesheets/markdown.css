@@ -1,19 +1,19 @@
-.markdown {
+.markdown-body {
   word-wrap: break-word;
 }
-.markdown,
-.markdown h1,
-.markdown h2,
-.markdown h3,
-.markdown h4,
-.markdown h5,
-.markdown h6,
-.markdown pre,
-.markdown code,
-.markdown blockquote,
-.markdown em,
-.markdown strong,
-.markdown code {
+.markdown-body,
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6,
+.markdown-body pre,
+.markdown-body code,
+.markdown-body blockquote,
+.markdown-body em,
+.markdown-body strong,
+.markdown-body code {
   font-size: 14px;
   line-height: 20px;
   font-weight: normal;
@@ -21,36 +21,36 @@
   font-family: consolas, monaco, courier, "courier new", fixed-width;
   color: #333333;
 }
-.markdown h1,
-.markdown h2,
-.markdown h3,
-.markdown h4,
-.markdown h5,
-.markdown h6,
-.markdown pre,
-.markdown code,
-.markdown blockquote,
-.markdown ol,
-.markdown ul,
-.markdown li,
-.markdown p,
-.markdown section,
-.markdown header,
-.markdown footer {
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6,
+.markdown-body pre,
+.markdown-body code,
+.markdown-body blockquote,
+.markdown-body ol,
+.markdown-body ul,
+.markdown-body li,
+.markdown-body p,
+.markdown-body section,
+.markdown-body header,
+.markdown-body footer {
   float: none;
   margin: 0;
   padding: 0;
 }
-.markdown h1,
-.markdown p,
-.markdown ul,
-.markdown ol,
-.markdown pre,
-.markdown blockquote {
+.markdown-body h1,
+.markdown-body p,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body pre,
+.markdown-body blockquote {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.markdown h1 {
+.markdown-body h1 {
   position: relative;
   display: inline-block;
   display: table-cell;
@@ -58,75 +58,75 @@
   margin: 0;
   overflow: hidden;
 }
-.markdown h1:after {
+.markdown-body h1:after {
   content: "====================================================================================================";
   position: absolute;
   bottom: 20px;
   left: 0;
 }
-.markdown h1 + * {
+.markdown-body h1 + * {
   margin-top: 0;
 }
-.markdown h2,
-.markdown h3,
-.markdown h4,
-.markdown h5,
-.markdown h6 {
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
   position: relative;
   margin-bottom: 20px;
 }
-.markdown h2:before,
-.markdown h3:before,
-.markdown h4:before,
-.markdown h5:before,
-.markdown h6:before {
+.markdown-body h2:before,
+.markdown-body h3:before,
+.markdown-body h4:before,
+.markdown-body h5:before,
+.markdown-body h6:before {
   content: "## ";
   display: inline;
 }
-.markdown h3:before {
+.markdown-body h3:before {
   content: "### ";
 }
-.markdown h4:before {
+.markdown-body h4:before {
   content: "#### ";
 }
-.markdown h5:before {
+.markdown-body h5:before {
   content: "##### ";
 }
-.markdown h6:before {
+.markdown-body h6:before {
   content: "###### ";
 }
-.markdown li {
+.markdown-body li {
   position: relative;
   display: block;
   padding-left: 34px;
   padding-left: 4ch;
 }
-.markdown li:after {
+.markdown-body li:after {
   position: absolute;
   top: 0;
   left: 0;
 }
-.markdown ul > li:after {
+.markdown-body ul > li:after {
   content: "*";
 }
-.markdown ol {
+.markdown-body ol {
   counter-reset: ol;
 }
-.markdown ol > li:after {
+.markdown-body ol > li:after {
   content: counter(ol) ".";
   counter-increment: ol;
 }
-.markdown pre {
+.markdown-body pre {
   margin-left: 34px;
   padding-left: 4ch;
 }
-.markdown blockquote {
+.markdown-body blockquote {
   position: relative;
   padding-left: 17px;
   padding-left: 2ch;
   overflow: hidden;
 }
-.markdown blockquote:after {
+.markdown-body blockquote:after {
   content: ">\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>";
   white-space: pre;
   position: absolute;
@@ -135,42 +135,42 @@
   font-size: 14px;
   line-height: 20px;
 }
-.markdown strong:before,
-.markdown strong:after {
+.markdown-body strong:before,
+.markdown-body strong:after {
   content: "__";
   display: inline;
 }
-.markdown em:before,
-.markdown em:after {
+.markdown-body em:before,
+.markdown-body em:after {
   content: "*";
   display: inline;
 }
-.markdown a {
+.markdown-body a {
   text-decoration: none;
 }
-.markdown a:before {
+.markdown-body a:before {
   content: "[";
   display: inline;
   color: #333333;
 }
-.markdown a:after {
+.markdown-body a:after {
   content: "](" attr(href) ")";
   display: inline;
   color: #333333;
 }
-.markdown code {
+.markdown-body code {
   font-weight: 100;
 }
-.markdown code:before,
-.markdown code:after {
+.markdown-body code:before,
+.markdown-body code:after {
   content: "`";
   display: inline;
 }
-.markdown pre code:before,
-.markdown pre code:after {
+.markdown-body pre code:before,
+.markdown-body pre code:after {
   content: none;
 }
-.markdown hr {
+.markdown-body hr {
   position: relative;
   height: 20px;
   font-size: 0;
@@ -179,7 +179,7 @@
   border: 0;
   margin-bottom: 20px;
 }
-.markdown hr:after {
+.markdown-body hr:after {
   content: "----------------------------------------------------------------------------------------------------";
   position: absolute;
   top: 0;
@@ -190,10 +190,10 @@
   word-wrap: break-word;
 }
 @-moz-document url-prefix() {
-  .markdown h1 {
+  .markdown-body h1 {
     display: block;
   }
 }
-.markdown-ones ol > li:after {
+.markdown-body-ones ol > li:after {
   content: "1.";
 }
