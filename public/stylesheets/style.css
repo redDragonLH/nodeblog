@@ -54,6 +54,7 @@ article a:hover{
 }
 .info{
   font-size: 14px;
+  padding-top: 20px;
 }
 .edit{
   margin: 3px;
@@ -150,3 +151,4 @@ article a:hover{
   height: 200px;
   overflow: hidden;
 }
+
