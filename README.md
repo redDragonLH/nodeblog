@@ -1,5 +1,22 @@
 # 多用户登录博客系统  
 
+###
+与nginx配合需要转发监听node开启的端口
+*参考*
+server{  
+  listen 80;  
+  server_name blog.liuhecode.com;  
+  index index.html index.htm index.php default.html default.htm default.php;
+
+location / {  
+    proxy_set_header X-Real-IP $remote_addr;  
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;  
+    proxy_set_header Host $http_host;  
+    proxy_set_header X-NginX-Proxy true;  
+    proxy_pass http://127.0.0.1:3000000/;  
+    proxy_redirect off;  
+  }
+}
 ``` nodemon ./bin/www 开启服务  ``` 
 
 ``` mongod --dbpath c:\mongodata\blog  & mongod --logpath "C:\mongodata\blog\mongodb.log" --install  开启mongodb数据库 ```
