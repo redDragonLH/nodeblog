@@ -2,6 +2,7 @@ var crypto = require('crypto');
 var User = require('../models/user.js');
 var Post = require('../models/post.js');
 var Comment = require('../models/comment.js');
+var fs = require('fs');
 // 上传文件
 var multer = require('multer');
 var storage = multer.diskStorage({
@@ -424,6 +425,16 @@ module.exports = function(app){
       });
     });
   });
+  app.post('hooks',function functionName(req, res) {
+    fs.writeFile('hook.text',  req.body ,(err)=>{
+      if(err){
+          console.log(err);
+          console.log('写入失败');
+      }
+      console.log('写入成功----------------------');
+      
+  })
+  })
 
   // 404
   app.use(function (req, res) {
