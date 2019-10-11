@@ -8,7 +8,7 @@ body{
   margin: 2em auto !important;
   padding: 0 2em !important;
   font-size: 14px;
-  font-family: "Microsoft YaHei";
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 p{
   line-height: 24px;
@@ -20,7 +20,6 @@ header{
 }
 nav{
   float: left;
-  font-family: "Microsoft YaHei";
   font-size: 1.1em;
   text-transform: uppercase;
   margin-left: -12em;
